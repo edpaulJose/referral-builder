@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "install:client": "npm install --prefix client",
+    "install:server": "npm install --prefix server",
     "client": "npm run dev --prefix client",
     "server": "npm start --prefix server",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
@@ -12,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "concurrently": "^8.2.2"
+  "devDependencies": {
+    "concurrently": "^7.0.0"
   }
 }
