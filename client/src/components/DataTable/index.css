@@ -1,0 +1,66 @@
+.data-table {
+  width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  padding: 8px;
+}
+
+.data-table .filter {
+  margin-bottom: 1em;
+}
+
+.data-table .filter input {
+  margin-right: 1em;
+  padding: 0.5em;
+}
+
+.data-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+  padding: 0.75em;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.data-table th {
+  cursor: pointer;
+}
+
+/* Implement this to make alternate row colors */
+/* .data-table tbody tr:nth-child(even) {
+  background-color: #a4a0a0;
+} */
+
+.data-table .pagination {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.data-table .pagination button {
+  margin: 0 0.25em;
+  padding: 0.5em 1em;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.data-table .pagination button.active {
+  background-color: #5d5f60;
+}
+
+.data-table .pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.data-table .items-per-page {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.data-table .items-per-page select {
+  padding: 0.5em;
+}
